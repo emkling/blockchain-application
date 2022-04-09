@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import App from './app'
 import './index.css'
 
+import {TransactionProvider } from './contract/TransactionProvider'
 
+ReactDOM.render(
 
-ReactDOM.render(<App />, document.getElementById('root'));
+<TransactionProvider><App /> </TransactionProvider>, document.getElementById('root'));

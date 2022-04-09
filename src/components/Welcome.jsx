@@ -24,12 +24,12 @@ const Welcome = () => {
   return (
     <div className='h-screen w-full flex flex-col'>
       <div className='w-full justify-center flex p-2'>
-        <h1 className='text-2xl sm:text-6xl mt-56 text-[#c85d5d] text-gradient py-1'>Send Ethereum</h1>
+        <h1 className='text-3xl sm:text-6xl mt-20 sm:mt-56 text-[#c85d5d] text-gradient py-1'>Send Ethereum</h1>
       </div>
 
 
       <div className='flex justify-center py-4'> 
-      <div className=' p-3 rounded-xl h-[200px] w-80  my-5 eth-card white-glassmorphism'>
+      <div className=' p-3 rounded-xl h-[200px] w-80  my-5 eth-card white-glassmorphism '>
       <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">

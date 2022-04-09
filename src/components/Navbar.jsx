@@ -14,11 +14,11 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center h-[80px]">
+    <nav className="w-full flex justify-between items-center h-[45px] sm:h-[60px]">
       <div className=" flex-initial pl-12 justify-center items-center">
-        <img src={logo} alt="logo" className="w-[200px] -mt-[25px] sm:w-[300px] absolute sm:h-[115px] sm:-mt-[45px] cursor-pointer" />
+        <img src={logo} alt="logo" className="w-[170px] -mt-[25px] sm:w-[250px] absolute sm:h-[100px] sm:-mt-[40px] cursor-pointer" />
       </div>
-      <ul className="text-white w-full lg:flex hidden list-none flex-row mt-[15px] justify-end gap-12 pr-12 items-center flex-initial">
+      <ul className="text-white w-full lg:flex hidden list-none flex-row mt-[20px] justify-end gap-12 pr-12 items-center flex-initial">
         <a className="mx-4 cursor-pointer"> <RiMoneyDollarCircleLine className="inline-flex"/> Transactions </a>
         <a className="mx-4 cursor-pointer"> <AiOutlineDashboard color="#FFFFFF" className="inline-flex "/> Dashboard </a>
         <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
@@ -27,7 +27,7 @@ const Navbar = () => {
       </ul>
       <div className="flex relative">
         {!toggleMenu && (
-          <HiMenuAlt4 fontSize={28} className="text-white lg:hidden cursor-pointer mt-[15px] mr-12" onClick={() => setToggleMenu(true)} />
+          <HiMenuAlt4 fontSize={28} className="text-white lg:hidden cursor-pointer mt-[20px] sm:mt-[20px] mr-12" onClick={() => setToggleMenu(true)} />
         )}
         {toggleMenu && (
           <AiOutlineClose fontSize={28} className="text-white lg:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
